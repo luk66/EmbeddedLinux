@@ -1,2 +1,1 @@
-# EmbeddedLinux
-ECE434
+### For Embeded Linux
