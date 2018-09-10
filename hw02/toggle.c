@@ -4,6 +4,7 @@
 #include <sys/wait.h>
 #include <libsoc_gpio.h>
 #include <libsoc_debug.h>
+#include <libusb-1.0/libusb.h>
 #define GPIO_OUTPUT 50
 int main(void) {
   gpio *gpio_output;
