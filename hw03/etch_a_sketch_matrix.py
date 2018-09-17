@@ -66,7 +66,7 @@ def addstr(win, y, x, string):
 
 def draw_to_window(win, status, curse_position):
     """
-        Draw the current screen from the model
+        Draw the current screen from the model to window GUI
         win: window object, from curses
         status: 2d array, the status of the canvas
             0: the slot is not drawn
@@ -94,14 +94,25 @@ def draw_to_window(win, status, curse_position):
     win.refresh()
 
 def inverse_x(x):
+    """
+        Helper function for matrix display direction
+    """
     global ACTUAL_WIDTH
     return ACTUAL_WIDTH - 1 - x
 
 def inverse_y(y):
+    """
+        Helper function for matrix display direction
+    """
     global ACTUAL_HEIGHT
     return ACTUAL_HEIGHT - 1 - y
 
 def draw_to_matrix():
+    """
+        Draw form status to 8x8 matrix
+        status: 2d array
+        curse_position: [y, x]
+    """
     global status
     global curse_position
     global bus
@@ -192,6 +203,11 @@ GPIO.add_event_detect(button_6, GPIO.BOTH, callback=updateCanvas)
 GPIO.add_event_detect(button_7, GPIO.BOTH, callback=updateCanvas)
 
 def track_rotary():
+    """
+         Function to track two rotary encoders
+         curse_position: [y, x]
+         current_rotary_position_1/2: int, returned by encoder.position
+    """
     global myEncoder
     global curse_position
     global current_rotary_position_1
