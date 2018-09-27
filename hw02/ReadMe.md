@@ -6,3 +6,10 @@
 
 Extra includes:
 Add a button to clear the display and exit game.
+
+========================
+Professor Yoder's Comments
+
+Looks good.  Your processor % CPU seems low.  Could you recheck them?
+
+Score:10/10
