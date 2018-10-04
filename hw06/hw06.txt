@@ -1,0 +1,33 @@
+1. Where does Julia Cartwright work?
+  Julia works at National Instruments.
+
+2. What is PREEMPT_RT?
+  It is a real-time kernel patch.
+
+3. What is mixed criticality?
+  Mixed criticality is the systems that might run two different types of tasks, such as real-time required tasks and non-real-time required tasks.
+
+4.	How can drivers misbehave? 
+  Because the driver stacks are shared between the RT tasks and non-RT tasks.
+
+5.	What is Δ in Figure 1?
+  Delta is the latency, the time it takes from a event to occur until the relevant real-time tasks execute.
+
+6.	What is Cyclictest[2]?
+  Cyclictest can accurately and repeatedly measures the differece between a thread's instended wakeup time and the time at which it actually wakes up in order to provide statistics about the system's latencies.
+
+7.	What is plotted in Figure 2?
+  Figure2 plots the preempt and preempt_rt latencies histogram.
+
+8.	What is dispatch latency?  Scheduling latency?
+  Dispatch latency is the amount of time that from hardware firing to interupt patch occuring and the relevant threads being told to woken up to run.
+  Scheduling latency is amount of time that from it awares that tasks needed to be run to the tasks being actually scheduled to execute on CPU.
+
+9.	What is mainline?
+  Mainline models the timeline that threads being executed.
+
+10.	What is keeping the External event in Figure 3 from starting?
+  Longest running interrupt handler.
+
+11.	Why can the External event in Figure 4 start sooner?
+  Because it reduces the irq dispatch latency by letting higher priority tasks running on threads immediately.
