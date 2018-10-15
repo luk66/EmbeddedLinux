@@ -31,3 +31,10 @@
 
 11.	Why can the External event in Figure 4 start sooner?
   Because it reduces the irq dispatch latency by letting higher priority tasks running on threads immediately.
+
+========================
+Professor Yoder's Comments
+
+Score:  10/10
+
+Try searching "linux mainline kernel"
