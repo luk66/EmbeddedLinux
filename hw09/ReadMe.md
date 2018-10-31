@@ -35,3 +35,11 @@ Code part is in ~/PRUCookbook/docs/05blocks/code
   The upper one is the input from function generator; the lower one is the output from pin.
   
   Transfer can be done in 64ns.
+
+========================
+Professor Yoder's Comments
+
+Looks good.
+Late: -1
+
+Score:  9/10
